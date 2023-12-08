@@ -1,0 +1,375 @@
+.root {
+    font-family: serif;
+    color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors
+#3A2D28
+#A48374
+#CBAD8D
+#D1C7Bd
+#EBE3DB
+#F1EDE6
+
+*/
+
+.nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    box-sizing: border-box;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.logo {
+    margin-left: 10px;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.navList {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem {
+    margin-left: 25px;
+    margin-right: 25px;
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+}
+
+#navBooking {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #A48374;
+    border-radius: 5%;
+    margin-right: 10px;
+    color: #fff;
+}
+
+header {
+    position: relative;
+    height: 110vh;
+    /* background: center/cover no-repeat; Set your header image here */
+    text-align: center;
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0; 
+}
+
+.headerImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; /* Adjust the position if needed */
+    margin-top: -170px;
+}
+
+/* Section 1 - Our Services */
+.servicesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #3A2D28;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: -45px;
+}
+
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    background: #353535;
+    background-color: #CBAD8D;
+    font-size: 30px;
+
+}
+
+/* Section Title Headings */
+
+.headingBox {
+    background-color: #A48374;
+    border-radius: 5%;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 15px; /* Adjust as needed */
+}
+
+body .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    /* margin: 40px 0; */
+    /* margin-top: -400px; */
+}
+
+body .container .card {
+    position: relative;
+    min-width: 420px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;
+    transition: 0.5s;
+}
+
+body .container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #A48374;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+  
+body .container .card .box:hover {
+    transform: translateY(-30px);
+}
+  
+body .container .card .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+}  
+
+body .container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+body .container .card .box .content h2 {
+    font-size: 1.8rem;
+    color: #000000;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+body .container .card .box .content p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+/* Section 2 - About Us */
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #A48374;
+    background-color: #CBAD8D;
+    height: 600px;
+    margin: 40px;
+}
+
+.aboutContentContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.textContainer {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    
+}
+
+.imageContainer {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+/* Section 3 - Social Media */
+
+#socialMedia {
+    text-align: center;
+    padding: 40px;
+    background-color: #3A2D28;
+    color: #CBAD8D;
+}
+
+.headingBox {
+    margin-bottom: 20px;
+}
+
+.slideshow-container {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+.socialMediaImgs{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Navigation arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #CBAD8D;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Carousel */
+
+
+
+/* Section 4 - Location & Hours */
+
+#locationAndHours {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #A48374;
+    background-color: #CBAD8D;
+    height: 600px;
+    margin: 40px;
+}
+
+/* Common Sections */
+.commonSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #353535;
+    background-color: #CBAD8D;
+    height: 600px;
+    margin: 40px 40px 0 40px; /* Adjust margin as needed */
+}
+
+.commonSection h2 {
+    color: #000000; /* Adjust text color as needed */
+}
+
+#socialMedia .imgContainer {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+
+/* Include your carousel styling for social media */
+
+#locationAndHours {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #353535;
+    background-color: #CBAD8D;
+    height: 600px;
+    margin: 40px 40px 0 40px; /* Adjust margin as needed */
+}
+
+
+/* Footer */
+#footer {
+    background-color: #353535;
+    color: #CBAD8D;
+    padding: 20px;
+    text-align: center;
+}
+
+.socialIcons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons li {
+    margin: 0 10px;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    color: #CBAD8D;
+    font-size: 20px;
+}
