@@ -71,7 +71,6 @@ nav a {
 header {
     position: relative;
     height: 110vh;
-    /* background: center/cover no-repeat; Set your header image here */
     text-align: center;
     color: #fff; 
     display: flex;
@@ -84,7 +83,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top; /* Adjust the position if needed */
+    object-position: center top; 
     margin-top: -170px;
 }
 
@@ -119,7 +118,7 @@ header {
     border-radius: 5%;
     padding: 15px;
     margin-bottom: 20px;
-    margin-top: 15px; /* Adjust as needed */
+    margin-top: 15px; 
 }
 
 body .container {
@@ -291,10 +290,6 @@ body .container .card .box .content p {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Carousel */
-
-
-
 /* Section 4 - Location & Hours */
 
 #locationAndHours {
@@ -319,11 +314,11 @@ body .container .card .box .content p {
     background: #353535;
     background-color: #CBAD8D;
     height: 600px;
-    margin: 40px 40px 0 40px; /* Adjust margin as needed */
+    margin: 40px 40px 0 40px; 
 }
 
 .commonSection h2 {
-    color: #000000; /* Adjust text color as needed */
+    color: #000000; 
 }
 
 #socialMedia .imgContainer {
@@ -333,7 +328,6 @@ body .container .card .box .content p {
     perspective: 1000px;
 }
 
-/* Include your carousel styling for social media */
 
 #locationAndHours {
     display: flex;
@@ -344,7 +338,7 @@ body .container .card .box .content p {
     background: #353535;
     background-color: #CBAD8D;
     height: 600px;
-    margin: 40px 40px 0 40px; /* Adjust margin as needed */
+    margin: 40px 40px 0 40px; 
 }
 
 
