@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital@0;1&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 <body>
@@ -21,52 +24,57 @@
         <button id="navBooking">Book Now</button>
     </nav>
 
-
     <header>
         <img src="/imgs/Lashes-LVL-Lash-Lift-CYB-Skin-Clinic-Watford.jpg" class="headerImg" alt="">
     </header>
     
-    <section id="services" class="servicesContainer">
+    <section id="services" class="commonSection">
         <div class="headingBox">
-            <h2>Our Services</h2>
+            <h2>Services</h2>
         </div>
-        <div class="container">
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <h2>Lash Lift & Tint</h2>
-                        <!-- <img src="" alt=""> -->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore</p>
-                    </div>
+        <div class="sectionServices">
+            <div class="serviceContainer" id="serviceContainerMobileResponsiveness">
+                <div class="imgContainer">
+                    <img src="imgs/photo-1506003094589-53954a26283f.png" alt="Image">
+                    <!-- width="400px" -->
+                </div>
+                <div class="textContainer">
+                    <h3>Lash Lifting</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum sagittis metus, vel ornare nibh viverra sed.</p>
+                    <h4>$100</h4>
                 </div>
             </div>
-            <div class="card">
-                <div class="box">
-                    <div class="content">
-                        <h2>Lamination</h2>
-                        <!-- <img src="" alt=""> -->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore</p>
-                    </div>
+            <div class="serviceContainer">
+                <div class="imgContainer">
+                    <img src="imgs/photo-1506003094589-53954a26283f.png" alt="Image">
+                    <!-- width="400px" -->
+                </div>
+                <div class="textContainer">
+                    <h3>Lamination</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum sagittis metus, vel ornare nibh viverra sed.</p>
+                    <h4>$100</h4>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <section id="about">
-        <section id="about">
-            <div class="headingBox">
-                <h2>About Us</h2>
+    <section id="about" class="commonSection">
+        <div class="headingBox">
+            <h2>About</h2>
+        </div>
+        <div class="aboutContentContainer">
+            <div class="aboutTextContainer">
+                <h3>Welcome to Dayani Beauty Bar!</h3>
+                <p>I'm Rangina, a passionate freelance artist specializing in the transformative art of lash extensions and laminations. With a keen eye for detail and a commitment to excellence, I take pride in creating customized lash designs and lamination treatments that not only enhance your natural beauty but also reflect your personal style.
+                <br><br>
+                At Dayani Beauty Bar, the experience goes beyond the aesthetic—it's about making you feel pampered and confident. Using top-tier products and staying abreast of industry trends, I ensure a luxurious yet enjoyable atmosphere during each session. Whether you're seeking the allure of lash extensions or the sleek elegance of laminations, I am dedicated to tailoring my services to your unique preferences.
+                <br><br>
+                Thank you for considering Dayani Beauty Bar for your beauty needs. I look forward to the opportunity to provide you with a personalized, stunning look that brings out the best in you.</p>
             </div>
-            <div class="aboutContentContainer">
-                <div class="textContainer">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum sagittis metus, vel ornare nibh viverra sed. Nam vitae nunc a tortor condimentum gravida. Proin mollis aliquam scelerisque. Phasellus faucibus rutrum ante, eu mollis sem blandit at. Sed id pretium mi, ornare vehicula justo. Aenean ultricies lacus non magna viverra, semper porta lacus eleifend. <br><br>Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam consectetur ultrices fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum molestie sem vitae nibh lobortis, vel mattis sapien maximus. Duis sit amet lorem urna. Vestibulum tincidunt orci vel felis feugiat, vitae molestie ligula elementum. </p>
-                </div>
-                <div class="imageContainer">
-                    <img src="imgs/photo-1506003094589-53954a26283f.png" alt="Image" width="300px">
-                </div>
+            <div class="aboutImageContainer">
+                <img src="imgs/photo-1506003094589-53954a26283f.png" alt="Image" width="500px">
             </div>
-        </section>
+        </div>
     </section>
 
     <section id="socialMedia" class="commonSection">
@@ -75,53 +83,52 @@
         </div>
         <div class="slideshow-container">
             <div class="mySlides">
-                <img class="socialMediaImgs"src="imgs/photo-1589710751893-f9a6770ad71b.png" alt="Instagram Post 1">
+                <img class="socialMediaImgs"src="imgs/photo-1589710751893-f9a6770ad71b.png" alt="Instagram Post 1" width="800px">
             </div>
             <div class="mySlides">
-                <img src="imgs/photo-1633346152343-5486573d3d50.png" alt="Instagram Post 2">
+                <img src="imgs/photo-1633346152343-5486573d3d50.png" alt="Instagram Post 2" width="800px">
             </div>
-
             <!-- Navigation arrows -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
         </div>
     </section>
 
     <section id="locationAndHours" class="commonSection">
         <div class="headingBox">
-            <h2>Location & Hours</h2>
+            <h2>DBB</h2>
         </div>
-        <div class="locationDetails">
-            <h3>Location</h3>
-            <ul>
-                <li>Address: Your Business Address</li>
-                <li>City, State, ZIP</li>
-            </ul>
-        </div>
+        <div class="alignItems">
+            <div class="locationDetails">
+                <h4>Location</h4>
+                <ul>
+                    <li>Address: Your Business Address</li>
+                    <li>City, State, ZIP</li>
+                </ul>
+            </div>
 
-        <div class="openingHours">
-            <h3>Hours of Operation</h3>
-            <ul>
-                <li><strong>Monday:</strong> 9:00 AM - 6:00 PM</li>
-                <li><strong>Tuesday:</strong> 9:00 AM - 6:00 PM</li>
-                <li><strong>Wednesday:</strong> 9:00 AM - 6:00 PM</li>
-                <li><strong>Thursday:</strong> 9:00 AM - 6:00 PM</li>
-                <li><strong>Friday:</strong> 9:00 AM - 6:00 PM</li>
-                <li><strong>Saturday:</strong> 10:00 AM - 4:00 PM</li>
-                <li><strong>Sunday:</strong> Closed</li>
-            </ul>
+            <div class="openingHours">
+                <h4>Hours of Operation</h4>
+                <ul>
+                    <li><strong>Monday:</strong> 9:00 AM - 6:00 PM</li>
+                    <li><strong>Tuesday:</strong> 9:00 AM - 6:00 PM</li>
+                    <li><strong>Wednesday:</strong> 9:00 AM - 6:00 PM</li>
+                    <li><strong>Thursday:</strong> 9:00 AM - 6:00 PM</li>
+                    <li><strong>Friday:</strong> 9:00 AM - 6:00 PM</li>
+                    <li><strong>Saturday:</strong> 10:00 AM - 4:00 PM</li>
+                    <li><strong>Sunday:</strong> Closed</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <footer id="footer">
         <ul class="socialIcons">
-            <li><a href="#" target="_blank"><img src="path/to/facebook-icon.png" alt="Facebook"></a></li>
             <li><a href="#" target="_blank"><img src="path/to/twitter-icon.png" alt="Twitter"></a></li>
             <li><a href="#" target="_blank"><img src="path/to/instagram-icon.png" alt="Instagram"></a></li>
             <!-- Add more social media icons as needed -->
         </ul>
-        <p>&copy; 2023 Your Business Name. All rights reserved.</p>
+        <p>&copy; 2023 Dayani Beauty Bar. All rights reserved.</p>
     </footer>
     
     <script src="script.js"></script>
