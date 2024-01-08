@@ -23,3 +23,12 @@ function showSlides(n) {
 
     slides[slideIndex - 1].style.display = "block";
 }
+
+function toggleSidebar() {
+    let sidebar = document.getElementsByClassName('sidebar')
+    console.log(sidebar);
+    
+
+
+
+}
