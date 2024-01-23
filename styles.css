@@ -3,19 +3,19 @@
 }
 
 * {
-    font-family: 'Figtree', sans-serif;
+    /* font-family; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: #504F4C;
 }
 /* 
 Colors
-#EFE7DA
-#B29079
-#E1DACA
-#C1B6A4
-#F6F5EC
+#B6886A
+#E5DAD0
+#B29A89
+#504F4C
+#A9B4A4
 
 #271B12
 */
@@ -32,16 +32,16 @@ Colors
     /* height: 600px; */
 }
 
-.commonSection h2 {
+/* .commonSection h2 {
     color: #ffffff; 
-}
+} */
 
 .headingBox {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-    background-color: #C1B6A4;
+    background-color: #B29A89;
     border-radius: 50%;
     padding: 15px;
     margin-left: 25px;
@@ -148,7 +148,7 @@ img {
 /* Nav */
 
 nav{
-  background: #B29079;
+  background: #E5DAD0;
   height: 80px;
   width: 100%;
 }
@@ -210,10 +210,11 @@ header {
 
 .headerImg {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     object-position: center top;
     border-radius: 0%;
+    background-attachment: fixed;
 }
 
 /* Section 1 - Our Services */
@@ -231,8 +232,7 @@ header {
     justify-content: start;
     align-items: center;
     max-width: 800px;
-    margin-left: 25px;
-    background-color: #B29079;
+    /* background-color: #A9B4A4; */
     border-radius: 2%;
 }
 
@@ -387,11 +387,11 @@ li {
 @media only screen and (max-width: 800px) {
 /* 
 Colors
-#EFE7DA
-#B29079
-#E1DACA
-#C1B6A4
-#F6F5EC
+#B6886A
+#E5DAD0
+#B29A89
+#504F4C
+#A9B4A4
 
 #271B12
 */
@@ -416,7 +416,7 @@ Colors
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #B29079;
+        background: #A9B4A4;
         top: 75px;
         left: -100%;
         text-align: center;
@@ -502,9 +502,9 @@ Colors
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        max-width: 89%;
+        max-width: 100vh;
         /* margin-left: 25px; */
-        background-color: #B29079;
+        background-color: #A9B4A4;
         border-radius: 2%;
     }
     
@@ -545,10 +545,10 @@ Colors
         align-items: start;
         flex-direction: column;
         /* margin-left: 0; */
-        background-color: #B29079;
+        background-color: #A9B4A4;
         /* margin-right: 25px; */
         /* border-radius: 2%; */
-        max-width: 89%; 
+        max-width: 100vh; 
         margin: 0 auto; 
         
     }
