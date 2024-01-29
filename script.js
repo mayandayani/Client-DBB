@@ -1,43 +1,18 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+document.addEventListener("DOMContentLoaded", function () {
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+  // Hover effect functionality
+  const imgContainers = document.querySelectorAll(".imgContainer");
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
+  imgContainers.forEach((imgContainer) => {
+      const productDetails = imgContainer.querySelector(".productDetails");
 
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
+      imgContainer.addEventListener("mouseover", function () {
+          productDetails.style.opacity = "1";
+      });
 
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
+      imgContainer.addEventListener("mouseout", function () {
+          productDetails.style.opacity = "0";
+      });
+  });
 
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-}
-
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the navbar
-var navbar = document.getElementById("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-} 
+});

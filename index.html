@@ -17,7 +17,7 @@
     <!-- Navbar -->
     <nav id="navbar">
 
-        <a class="headerLogo" href="#">DBB</a>
+        <a class="headerLogo" href="#"><img src="imgs/dbb-logo-removebg-preview.png" alt="DBB Logo"></a>
         <a class="headerBookButton" href="#"></a>
 
         <input type="checkbox" id="check">
@@ -25,14 +25,21 @@
             <i class="fas fa-bars"></i>
         </label>
 
-      <ul>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Social Media</a></li>
-      </ul>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#socialMedia">Social Media</a></li>
+        </ul>
+        
     </nav>
+    <div class="headerContainer">
+        <img src="imgs/dbb-logo-removebg-preview.png" alt="DBB Logo" class="logoOverlay">
+        <h1 class="headerText">
+            Vancouver Artist Rangina Dayani
+        </h1>
+        <img src="imgs/DBB1.jpg" alt="" class="headerImg">
 
-    <img src="imgs/DBB1.jpg" alt="" class="headerImg">
+    </div>
 
 
     <!-- Services Section -->
@@ -41,32 +48,38 @@
             <h2>Services</h2>
         </div>
         <div class="sectionServices">
-            <div class="serviceContainer" id="serviceContainerMobileResponsiveness">
+            <div class="serviceContainer" id="serviceContainerMarginCards">
                 <div class="imgContainer">
-                    <img src="imgs/img5b.jpg" alt="Image">
-                    <!-- width="400px" -->
+                    <img src="imgs/img5b.jpg" alt="Image" >
+                    <div class="productDetails">
+                        <p>Product Name test</p>
+                        <p>Price: $XX.XX test</p>
+                    </div>
                 </div>
                 <div class="textContainer">
                     <h3>Lash Lifting</h3>
-                    <p>A lash lift is a beauty treatment that enhances the natural lashes by lifting and curling them from the root. 
+                    <!-- <p>A lash lift is a beauty treatment that enhances the natural lashes by lifting and curling them from the root. 
                     <br><br>
                     It involves applying a special solution to the lashes, which helps to set them in a lifted position. 
                     <br><br>
-                    The result is longer-looking and more voluminous lashes that appear naturally curled. A lash lift can last for several weeks and is a great alternative to eyelash extensions for those who want a low-maintenance way to enhance their lashes.
+                    The result is longer-looking and more voluminous lashes that appear naturally curled. A lash lift can last for several weeks and is a great alternative to eyelash extensions for those who want a low-maintenance way to enhance their lashes. -->
                 </div>
             </div>
             <div class="serviceContainer">
                 <div class="imgContainer">
                     <img src="imgs/img7c.jpg" alt="Image">
-                    <!-- width="400px" -->
+                    <div class="productDetails">
+                        <p>Product Name test</p>
+                        <p>Price: $XX.XX test</p>
+                    </div>
                 </div>
                 <div class="textContainer">
                     <h3>Lamination</h3>
-                    <p>Brow lamination is a beauty treatment that helps to shape and set the eyebrows in a desired position. 
+                    <!-- <p>Brow lamination is a beauty treatment that helps to shape and set the eyebrows in a desired position. 
                     <br><br>    
                     It involves applying a solution to the brows to relax the hair and then brushing them into place using a special technique. 
                     <br><br>
-                    The result is fuller, thicker-looking brows with a more defined shape. Brow lamination can last for up to 8 weeks and is a popular choice for those who want to achieve a more groomed and polished brow look.
+                    The result is fuller, thicker-looking brows with a more defined shape. Brow lamination can last for up to 8 weeks and is a popular choice for those who want to achieve a more groomed and polished brow look. -->
                 </div>
             </div>
         </div>
@@ -77,26 +90,18 @@
         <h2>About</h2>
     </div>
     <div class="aboutContentContainer">
-        <div class="aboutBodyContainer">
-            <div class="aboutInnerContainer">
-                <div class="aboutImageWrapper">
-                    <div class="aboutImageContainer">
-                        <img src="imgs/dbb2.jpg" alt="Image" width="500px">
-                    </div>
-                </div>
-                <div class="aboutTextContainer">
-                    <h3>Welcome to Dayani Beauty Bar!</h3>
-                    <p>I'm Rangina, a passionate freelance artist specializing in the transformative art of lash extensions and laminations. 
-                      <br><br>    
-                      With a keen eye for detail and a commitment to excellence, I take pride in creating customized lash designs and lamination treatments that not only enhance your natural beauty but also reflect your personal style.
-                      <br><br>
-                      At Dayani Beauty Bar, the experience goes beyond the aesthetic—it's about making you feel pampered and confident. Using top-tier products and staying abreast of industry trends, I ensure a luxurious yet enjoyable atmosphere during each session. 
-                      <br><br>
-                      Whether you're seeking the allure of lash extensions or the sleek elegance of laminations, I am dedicated to tailoring my services to your unique preferences.
-                      <br><br>
-                      Thank you for considering Dayani Beauty Bar for your beauty needs. I look forward to the opportunity to provide you with a personalized, stunning look that brings out the best in you.</p>
-                    </div>
-                </div>
+        <div class="aboutImageWrapper">
+            <div class="aboutImageContainer">
+                <img src="imgs/dbb2.jpg" alt="Image" width="500px">
+            </div>
+        </div>
+        <div class="aboutTextContainer">
+            <h3>Welcome to Dayani Beauty Bar!</h3>
+            <p>I'm Rangina, a passionate freelance artist specializing in lash extensions and laminations. With meticulous attention to detail, I create customized designs that enhance your natural beauty. 
+            <br><br>
+            At Dayani Beauty Bar, it's about making you feel pampered and confident with top-tier products and a luxurious atmosphere. 
+            <br><br>
+            Whether you prefer lash extensions or laminations, I tailor my services to your unique style. Thank you for considering Dayani Beauty Bar—I look forward to bringing out the best in you.</p>
             </div>
         </div>
     </div>
