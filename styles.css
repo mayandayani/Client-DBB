@@ -123,66 +123,83 @@ header {
     margin-bottom: -20px; 
 }
 
+.headerContainer {
+    position: relative;
+}
+
+
+.logoOverlay {
+    position: absolute;
+    top: 50px; 
+    left: 1000px;
+    z-index: 1; 
+    width: 700px;
+}
+
+.headerText {
+    position: absolute;
+    top: 500px;
+    left: 900px;
+    margin: 0 250px;
+    font-size: 75px; 
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+}
+
 .headerImg {
     width: 100%;
     height: 100vh;
     object-fit: cover; 
     object-position: center center; 
-    border-radius: 0%;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
-.headerContainer {
-    position: relative;
-}
-
-.logoOverlay {
-    position: absolute;
-    top: 50px; 
-    left: 125px; 
-    z-index: 1; 
-    max-width: 200px; 
-}
-
-.headerText {
-    position: absolute;
-    top: 22%;
-    left: 230px;
-    transform: translate(-50%, -50%);
-    font-size: 25px; 
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
-}
 
 
 /* Section 1 - Our Services */
 .sectionServices {
     display: flex;
-    justify-content: space-around; 
+    justify-content: center; 
     align-items: start;
-    flex-wrap: wrap;
+    background-color: #A9B4A4;
+    width: 100%;
 }
 
 .serviceContainer {
     background-color: #A9B4A4;
-    font-size: 50px;
+    margin: 10px;
+    width: 650px;
+    height: 650px;
+    margin: 30px 0;
 }
 
 .imgContainer img {
-    width: 100%; 
-    height: 200px;
-    object-fit: cover;
-    position: relative;
+    -webkit-box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75); 
+    box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75);
 }
 
-.productDetails {
+.textContainer {
+    font-size: 50px;
+    width: 50%;
+}
+
+
+.imgContainer img {
+    width: 600px; 
+    height: 600px;
+    object-fit: cover;
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+/* .productDetails {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.9);
-    /* display: none; */
+    /* display: none;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -190,7 +207,7 @@ header {
     pointer-events: none;
     opacity: 0;
     
-}
+} */
 
 /* .textContainer {
     margin-left: 25px;
@@ -249,20 +266,8 @@ header {
 
 /* Section 3 - Social Media */
 
-.slideshow-container {
-    max-width: 800px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.mySlides {
-    display: none;
-}
-
 .socialMediaImgs{
     width: 100%;
-    border-radius: 8px;
 }
 
 .socialMediaCallToAction {
@@ -379,11 +384,12 @@ Colors
     /* Nav */
 
     .checkbtn {
-        font-size: 40px;
+        font-size: 60px;
         color: white;
         float: right;
-        line-height: 75px;
+        line-height: 100px;
         width: 50px;
+        margin-right: 20px;
         cursor: pointer;
         display: block; 
     }
@@ -394,10 +400,10 @@ Colors
     
     ul {
         position: fixed;
-        width: 50%;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         background: #A9B4A4;
-        top: 94px;
+        top: 100px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -432,10 +438,26 @@ Colors
         color: #271B12;
     }
     
+    body {
+        transition: margin-left 0.5s;
+      }
+      
+    .sidebar-open {
+        margin-left: 250px; /* Adjust the width of your sidebar */
+    }
+    
+    #closeSidebarBtn {
+        display: none;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1001; /* Ensure the button is above the sidebar */
+    }
+    
     #check:checked ~ ul {
         left: 0;
     }
-    
+
 
     /* Common Sections */
 
@@ -453,7 +475,7 @@ Colors
     }
     
     h4 {
-        font-size: 35px;
+        font-size: 30px;
     }
     
     p {
@@ -462,37 +484,58 @@ Colors
 
     /* Header Img */
 
-    /* .headerImg {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center top;
-        border-radius: 0%;
-    } */
+    .logoOverlay {
+        position: absolute;
+        top: 25px; 
+        left: 135px; 
+        z-index: 1; 
+        width: 400px; 
+    }
+
+    .headerText {
+        position: absolute;
+        top: 300px;
+        left: 200px;
+        margin: 0 40px;
+        font-size: 45px; 
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+    }
 
     /* Services */
     .sectionServices {
         display: block;
-        text-align: center;
-        width: 100%;
+        justify-content: start; 
+        align-items: start;
+        background-color: transparent;
+        width: 50%;
     }
 
     .serviceContainer {
-        padding: 15px;
+        padding-top: 25px;
+        padding-bottom: 15px;
     }
 
     .imgContainer {
-        padding: 15px;
-        position: relative; 
+        /* padding: 0px; */
+        position: relative;
+        width: 100%;
     }
+
 
     .imgContainer img {
+        width: 85%; 
+        height: 300px;
         -webkit-box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75); 
         box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75);
-        width: 100%; 
+        /* width: 100%;  */
     }
 
-    .productDetails {
+    #serviceContainerMarginCards {
+        margin-bottom: 25px;
+    }
+
+    /* .productDetails {
         position: absolute;
         top: 0;
         left: 0;
@@ -518,7 +561,7 @@ Colors
     .imgContainer:hover .productDetails {
         opacity: 1;
         transform: rotateY(0deg); 
-    }
+    } */
 
     /* Section 2 - About Us */
 
@@ -562,26 +605,68 @@ Colors
 
     /* Section 3 - Social Media */
 
-    .slideshow-container {
-        max-width: 89%;
-        margin: auto;
-        position: relative;
-        overflow: hidden;
-    }
-
     .socialMediaCallToAction {
-        margin: 25px;
+        margin-left: 55px;
+        margin-right: 100px;
+        margin-bottom: 25px;
     }
 
-    .socialMediaCallToAction h4 {
-        color:black
+    #instagramLink {
+        text-decoration: none;
+        color: inherit;
     }
+
+    #instagramLink:hover {
+        color: blue;
+        text-decoration: underline;
+    }
+
+    .socialMediaContainer {
+        width: 100%;
+    }
+
+    .socialMediaPost {
+        width: 100%;
+        background: #A9B4A4;
+    }
+
+    .socialMediaImgs {
+        width: 85%;
+        /* height: auto;  */
+        margin: 25px;
+        margin-left: 30px;
+        -webkit-box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75); 
+        box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75);
+        height: 300px;
+    }
+
+    /* Call to Action Button */
+    #callToAction {
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0;
+    }
+    
+    #callToAction button {
+        width: 50%;
+        height: auto;
+        max-width: 100%;
+        font-size: 45px;
+        background-color: white;
+        color: black;
+    }
+
+    /* Footer */
 
     #footer p {
         font-size: 25px;
     }
 
 }
+
+/* Other view */
 
 @media only screen and (min-width: 601px) {
 

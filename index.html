@@ -18,27 +18,35 @@
     <nav id="navbar">
 
         <a class="headerLogo" href="#"><img src="imgs/dbb-logo-removebg-preview.png" alt="DBB Logo"></a>
-        <a class="headerBookButton" href="#"></a>
 
+        <!-- Fix the headerBookButton its for sidebar responsive view -->
+        <a class="headerBookButton" href="#"></a> 
+
+        <!-- Sidebar Responsive View Hamburger icon -->
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
 
+        <!-- NavBar Menu Items Desktop View -->
         <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#socialMedia">Social Media</a></li>
         </ul>
+
+        <!-- Refer to line 22 -->
+        <button id="closeSidebarBtn" onclick="closeSidebar()">Close</button>
+
         
     </nav>
     <div class="headerContainer">
+
         <img src="imgs/dbb-logo-removebg-preview.png" alt="DBB Logo" class="logoOverlay">
         <h1 class="headerText">
             Vancouver Artist Rangina Dayani
         </h1>
         <img src="imgs/DBB1.jpg" alt="" class="headerImg">
-
     </div>
 
 
@@ -49,37 +57,27 @@
         </div>
         <div class="sectionServices">
             <div class="serviceContainer" id="serviceContainerMarginCards">
-                <div class="imgContainer">
-                    <img src="imgs/img5b.jpg" alt="Image" >
-                    <div class="productDetails">
+                <div class="imgContainer" id="imgContainerOne">
+                    <img src="imgs/DBB-IG-S1.png" alt="Image" >
+                    <!-- <div class="productDetails">
                         <p>Product Name test</p>
                         <p>Price: $XX.XX test</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="textContainer">
                     <h3>Lash Lifting</h3>
-                    <!-- <p>A lash lift is a beauty treatment that enhances the natural lashes by lifting and curling them from the root. 
-                    <br><br>
-                    It involves applying a special solution to the lashes, which helps to set them in a lifted position. 
-                    <br><br>
-                    The result is longer-looking and more voluminous lashes that appear naturally curled. A lash lift can last for several weeks and is a great alternative to eyelash extensions for those who want a low-maintenance way to enhance their lashes. -->
                 </div>
             </div>
             <div class="serviceContainer">
                 <div class="imgContainer">
-                    <img src="imgs/img7c.jpg" alt="Image">
-                    <div class="productDetails">
+                    <img src="imgs/DBB-IG-S2.png" alt="Image">
+                    <!-- <div class="productDetails">
                         <p>Product Name test</p>
                         <p>Price: $XX.XX test</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="textContainer">
                     <h3>Lamination</h3>
-                    <!-- <p>Brow lamination is a beauty treatment that helps to shape and set the eyebrows in a desired position. 
-                    <br><br>    
-                    It involves applying a solution to the brows to relax the hair and then brushing them into place using a special technique. 
-                    <br><br>
-                    The result is fuller, thicker-looking brows with a more defined shape. Brow lamination can last for up to 8 weeks and is a popular choice for those who want to achieve a more groomed and polished brow look. -->
                 </div>
             </div>
         </div>
@@ -112,33 +110,49 @@
         <div class="headingBox">
             <h2>Instagram</h2>
         </div>
-        <div class="slideshow-container">
-            <div class="mySlides">
-                <img class="socialMediaImgs"src="imgs/photo-1589710751893-f9a6770ad71b.png" alt="Instagram Post 1" width="800px">
-            </div>
-            <div class="mySlides">
-                <img src="imgs/photo-1633346152343-5486573d3d50.png" alt="Instagram Post 2" width="800px">
-            </div>
-            <!-- Navigation arrows -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
         <div class="socialMediaCallToAction">
-            <h4>
-                Follow my instagram for more!
+            <h4>@
+                <a id="instagramLink" href="https://www.instagram.com/dayanibeautybar/" target="_blank">Dayani Beauty Bar</a>
             </h4>
         </div>
-
+        <div class="socialMediaContainer">
+            <!-- Instagram Post 1 -->
+            <div class="socialMediaPost">
+                <a href="https://www.instagram.com/p/CXHSPsSvRVQ/?img_index=1" target="_blank">
+                    <img class="socialMediaImgs" src="imgs/DBB-IG3.png" alt="Instagram Post 1" width="300px">
+                </a>
+            </div>
+            <!-- Instagram Post 2 -->
+            <div class="socialMediaPost">
+                <a href="https://www.instagram.com/dayanibeautybar/p/CYF_0A7LDRm/?img_index=1" target="_blank">
+                    <img class="socialMediaImgs" src="imgs/DBB-IG2.png" alt="Instagram Post 1" width="300px">
+                </a>
+            </div>
+            <!-- Instagram Post 3 -->
+            <div class="socialMediaPost">
+                <a href="https://www.instagram.com/p/CXUgokLP6C7/" target="_blank">
+                    <img class="socialMediaImgs" src="imgs/DBB-IG1.png" alt="Instagram Post 1" width="300px">
+                </a>
+            </div>
+        </div>
 
     </section>
 
+    <section id="callToAction">
+        <button>Book Now!</button>
+    </section>
+
     <footer id="footer">
-        <ul class="socialIcons">
+        <!-- <ul class="socialIcons">
             <li><a href="#" target="_blank"><img src="path/to/twitter-icon.png" alt="Twitter"></a></li>
             <li><a href="#" target="_blank"><img src="path/to/instagram-icon.png" alt="Instagram"></a></li>
-            <!-- Add more social media icons as needed -->
-        </ul>
-        <p>&copy; 2023 Dayani Beauty Bar. All rights reserved.</p>
+            Add more social media icons as needed
+        </ul> -->
+        <p>&copy; 
+            2023 Dayani Beauty Bar
+            <br>
+             All rights reserved
+            </p>
     </footer>
     
     <script src="script.js"></script>
