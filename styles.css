@@ -39,7 +39,6 @@ Colors
     /* height: 600px; */
 }
 
-
 .headingBox {
     display: flex;
     justify-content: center;
@@ -47,7 +46,7 @@ Colors
     text-align: center;
     width: 100%;
     background-color: #E5DAD0;
-    font-size: 60px; 
+    font-size: 60px;
 }
 
 
@@ -219,55 +218,80 @@ header {
 
 .aboutContentContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
     padding: 20px;
     font-size: 45px;
-    margin: 10px 350px; 
-    flex-direction: column; 
+    /* margin: 10px 350px;  */
     background-color: #A9B4A4;
-
 }
 
-/* .aboutInnerContainer {
-    max-width: 1200px; 
-    width: 100%;
-} */
-
-/* .aboutImageWrapper {
-    margin-top: 20px; 
-} */
-
-.aboutTextContainer {
-    display: flex;
-    flex-direction: column; 
-    padding: 20px;
-    flex: 1;
-    font-size: 45px; 
-    width: 50%; 
+.aboutImageContainer {
+    max-width: none;
+    width: 40%;
+    margin-left: 55px;
+    margin-right: -100px;
 }
+
 
 .aboutImageContainer img {
     max-width: 75%;
     width: 100%;
     height: auto;
     object-fit: cover;
+    -webkit-box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75); 
+    box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75);
 }
 
 .aboutTextContainer {
-    padding-left: 20px;
+    flex: 1;
+    font-size: 45px; 
+    /* padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px; 
     font-size: 45px; 
-    width: 100%;
+    width: 100%; */
 }
 
+    /* Section 3 - Header - Instagram Link */
+
+#socialMediaCallToAction {
+    font-size: 35px;
+    width: 15%;
+    margin-left: 815px;
+    margin-bottom: 15px;
+}
+
+#instagramLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+#instagramLink:hover {
+    color: blue;
+    text-decoration: underline;
+}
 
 /* Section 3 - Social Media */
 
-.socialMediaImgs{
+.socialMediaContainer {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    padding: 35px;
+    background-color: #A9B4A4;
     width: 100%;
+
+}
+
+.socialMediaImgs {
+    width: 90%;
+    height: 600px;
+    -webkit-box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75); 
+    box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75);
+    margin-left: 25px;
 }
 
 .socialMediaCallToAction {
@@ -275,66 +299,22 @@ header {
     margin-left: 350px;
 }
 
-
-/* Navigation arrows */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #ff9494;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Section 4 - Location & Hours */
-
-.alignItems {
+/* Call to Action Button */
+#callToAction {
+    height: 75px;
     display: flex;
-    justify-content: start;
-    align-items: start;
-    height: 310px;
-    width: 900px;
-    font-size: 15px;
-    background-color: #B29079;
-    border-radius: 2%;
-    /* margin-left: 400px; */
-    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
 }
 
-.locationDetails {
-    /* margin-left: 10px; */
-    margin-top: 10px;
-    font-size: 25px;
-}
-
-.openingHours {
-    /* margin-left: 40px; */
-    margin-top: 10px;
-    font-size: 25px;
-}
-
-li {
-    list-style: none;
+#callToAction button {
+    width: 15%;
+    height: auto;
+    max-width: 100%;
+    font-size: 45px;
+    background-color: white;
+    color: black;
 }
 
 /* Footer */
@@ -487,9 +467,9 @@ Colors
     .logoOverlay {
         position: absolute;
         top: 25px; 
-        left: 135px; 
+        left: 50px; 
         z-index: 1; 
-        width: 400px; 
+        width: 350px; 
     }
 
     .headerText {
@@ -514,21 +494,25 @@ Colors
     .serviceContainer {
         padding-top: 25px;
         padding-bottom: 15px;
+        padding-left: 25px;
+        height: 410px;
+        width: 100vw;
     }
 
     .imgContainer {
-        /* padding: 0px; */
-        position: relative;
+        margin-left: 10px;
+    }
+
+    .textContainer {
         width: 100%;
+        margin-left: 10px;
+
     }
 
 
     .imgContainer img {
-        width: 85%; 
+        width: 90%; 
         height: 300px;
-        -webkit-box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75); 
-        box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75);
-        /* width: 100%;  */
     }
 
     #serviceContainerMarginCards {
@@ -573,23 +557,18 @@ Colors
         width: 100%;
     }
 
-    /* .aboutInnerContainer {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+    .aboutImageContainer {
+        max-width: 95%;
+        width: 95%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
-    
-    .aboutImageWrapper {
-        order: 1; 
-        margin-top: 20px; 
-    } */
-    
+
     .aboutImageContainer img {
         max-width: 100%;
-        width: 100%;
         height: auto;
         object-fit: cover;
-        margin-left: 0;
+        margin-left: 10px;
         -webkit-box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75); 
         box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75);
     }
@@ -603,12 +582,13 @@ Colors
         width: 100%;
     } */
 
-    /* Section 3 - Social Media */
+    /* Section 3 - Header - Instagram Link */
 
-    .socialMediaCallToAction {
-        margin-left: 55px;
-        margin-right: 100px;
-        margin-bottom: 25px;
+    #socialMediaCallToAction {
+        margin-left: 100px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 60%;
     }
 
     #instagramLink {
@@ -621,8 +601,13 @@ Colors
         text-decoration: underline;
     }
 
+    /* Section 3 - Social Media */
+
     .socialMediaContainer {
+        flex-direction: column;
         width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     .socialMediaPost {
@@ -631,15 +616,16 @@ Colors
     }
 
     .socialMediaImgs {
-        width: 85%;
-        /* height: auto;  */
-        margin: 25px;
-        margin-left: 30px;
+        width: 95%;
+        height: 300px;
+        margin-left: 10px;
         -webkit-box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75); 
         box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75);
-        height: 300px;
     }
 
+    #socialMediaPostOneAndTwo {
+        margin-bottom: 25px;
+    }
     /* Call to Action Button */
     #callToAction {
         height: 75px;
