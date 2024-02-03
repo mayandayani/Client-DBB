@@ -3,7 +3,7 @@
 } */
 
 * {
-    font-family: 'Caveat', cursive;
+    font-family: 'MuseoModerno', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -55,7 +55,7 @@ Colors
     text-align: center;
     width: 100%;
     background-color: #E5DAD0;
-    font-size: 60px;
+    font-size: 45px;
 }
 
 /* New Nav
@@ -180,8 +180,8 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: white;
-  font-size: 50px;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
@@ -197,7 +197,7 @@ nav ul li a{
 
 .checkbtn{
   font-size: 40px;
-  color: white;
+  color: rgb(0, 0, 0);
   float: right;
   line-height: 75px;
   width: 50px;
@@ -207,6 +207,10 @@ nav ul li a{
 #check{
   display: none;
 } */
+
+#closeSidebarBtn {
+    display: none;
+}
 
 .headerLogo {
     font-size: 75px; 
@@ -244,12 +248,13 @@ header {
 
 .headerText {
     position: absolute;
-    top: 500px;
-    left: 900px;
+    top: 200px;
+    left: 1000px;
     margin: 0 250px;
     font-size: 75px; 
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+    
 }
 
 .headerImg {
@@ -273,10 +278,10 @@ header {
 
 .serviceContainer {
     background-color: #A9B4A4;
-    margin: 10px;
     width: 650px;
     height: 650px;
-    margin: 30px 0;
+    margin: 40px 0;
+    margin-left: 15px;
 }
 
 .imgContainer img {
@@ -286,7 +291,7 @@ header {
 
 .textContainer {
     font-size: 50px;
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -365,8 +370,8 @@ header {
 
 #socialMediaCallToAction {
     font-size: 35px;
-    width: 15%;
-    margin-left: 815px;
+    width: 25%;
+    margin-left: 735px;
     margin-bottom: 15px;
 }
 
@@ -429,13 +434,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 0;
+    margin: 35px 0;
 }
 
 #callToAction button {
-    width: 25%;
-    height: 125px;
-    max-width: 100%;
+    width: 125%;
+    height: 150px;
     font-size: 105px;
     background-color: white;
     color: black;
@@ -607,9 +611,9 @@ Colors
     .headerText {
         position: absolute;
         top: 100px;
-        left: 200px;
+        left: 150px;
         margin: 0 40px;
-        font-size: 45px; 
+        font-size: 35px; 
         color: white;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
     }
@@ -620,15 +624,17 @@ Colors
         justify-content: start; 
         align-items: start;
         background-color: transparent;
-        width: 50%;
+        width: 100%;
     }
 
     .serviceContainer {
         padding-top: 25px;
         padding-bottom: 15px;
         padding-left: 25px;
-        height: 410px;
+        height: 425px;
         width: 100vw;
+        margin-left: 0px;
+
     }
 
     .imgContainer {
@@ -636,7 +642,7 @@ Colors
     }
 
     .textContainer {
-        width: 80%;
+        width: 90%;
         margin-left: 10px;
     }
 
@@ -716,10 +722,11 @@ Colors
     /* Section 3 - Header - Instagram Link */
 
     #socialMediaCallToAction {
-        margin-left: 100px;
+        margin-left: 50px;
         margin-top: 15px;
         margin-bottom: 15px;
-        width: 60%;
+        width: 80%;
+
     }
 
     #instagramLink {
@@ -766,6 +773,8 @@ Colors
         width: 100%;
         background-color: #A9B4A4;
     }
+
+    
     
     .testimonalsContainer img {
         margin-top: 15px;
@@ -786,9 +795,8 @@ Colors
     }
     
     #callToAction button {
-        width: 50%;
+        width: 125%;
         height: auto;
-        max-width: 100%;
         font-size: 45px;
         background-color: white;
         color: black;
