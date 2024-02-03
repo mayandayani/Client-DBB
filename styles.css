@@ -58,7 +58,7 @@ Colors
     font-size: 60px;
 }
 
-/* New Nav*/
+/* New Nav
 
 .header{
     background-color: var(--black);
@@ -68,7 +68,8 @@ Colors
     width: 100%;
 }
 
-/* Logo */
+Logo
+
 .logo{
     display: inline-block;
     color: var(--white);
@@ -97,12 +98,15 @@ Colors
     transition: max-height .5s ease-out;
 }
 
-/* Menu Icon */
+Menu Icon
+
 .hamb{
     cursor: pointer;
     float: right;
     padding: 40px 20px;
-}/* Style label tag */
+}
+
+Style label tag
 
 .hamb-line {
     background: var(--white);
@@ -111,7 +115,8 @@ Colors
     position: relative;
     width: 24px;
 
-} /* Style span tag */
+} 
+Style span tag
 
 .hamb-line::before,
 .hamb-line::after{
@@ -132,7 +137,8 @@ Colors
 
 .side-menu {
     display: none;
-} /* Hide checkbox */
+} 
+Hide checkbox
 
 .side-menu:checked ~ nav{
     max-height: 100%;
@@ -147,11 +153,11 @@ Colors
 .side-menu:checked ~ .hamb .hamb-line::after {
     transform: rotate(45deg);
     top:0;
-}
+} */
 
 /* Nav */
 
-/* nav{
+nav{
   background: #E5DAD0;
   height: 100px;
   width: 100%;
@@ -183,10 +189,12 @@ nav ul li a{
   list-style: none;
   box-sizing: border-box;
 }
-a.active,a:hover{
+
+/* a:hover{
   background: #271B12;
   transition: .5s;
-}
+} */
+
 .checkbtn{
   font-size: 40px;
   color: white;
@@ -200,12 +208,12 @@ a.active,a:hover{
   display: none;
 } */
 
-/* .headerLogo {
+.headerLogo {
     font-size: 75px; 
     margin: 15px;
     text-decoration: none;
     color: #504F4C;
-} */
+}
 
 /* Header and Header Img */
 
@@ -398,9 +406,26 @@ header {
     margin-left: 350px;
 }
 
+/* Testimonals */
+.testimonalsContainer {
+    margin-bottom: 25px;
+    padding: 30px;
+    width: 100%;
+    background-color: #A9B4A4;
+}
+
+.testimonalsContainer img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25%;
+    width: 1000px;
+    -webkit-box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75); 
+    box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75);
+}
+
 /* Call to Action Button */
 #callToAction {
-    height: 75px;
+    height: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -408,10 +433,10 @@ header {
 }
 
 #callToAction button {
-    width: 15%;
-    height: auto;
+    width: 25%;
+    height: 125px;
     max-width: 100%;
-    font-size: 45px;
+    font-size: 105px;
     background-color: white;
     color: black;
 }
@@ -522,15 +547,15 @@ Colors
       }
       
     .sidebar-open {
-        margin-left: 250px; /* Adjust the width of your sidebar
+        margin-left: 0px;
     }
     
     #closeSidebarBtn {
         display: none;
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        z-index: 1001; /* Ensure the button is above the sidebar */
+        /* position: fixed;
+        top: 35px;
+        left: 375px;
+        z-index: 1001; Ensure the button is above the sidebar */
     }
     
     #check:checked ~ ul {
@@ -732,6 +757,25 @@ Colors
     #socialMediaPostOneAndTwo {
         margin-bottom: 25px;
     }
+
+    /* Testimonals */
+
+    .testimonalsContainer {
+        margin-bottom: 25px;
+        padding: 30px;
+        width: 100%;
+        background-color: #A9B4A4;
+    }
+    
+    .testimonalsContainer img {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        width: 350px;
+        -webkit-box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75); 
+        box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75);
+    }
+    
     /* Call to Action Button */
     #callToAction {
         height: 75px;
