@@ -1,7 +1,13 @@
 # Project Name: Dayani Beauty Bar
 
-Link: https://dayanibeautybar.netlify.app/
-Description: This project is a freelance lash artist website created using HTML, CSS, and JS. It's a responsive website designed to showcase the artist's skills, services, social media presence, and client testimonials. The site features a mobile-friendly sidebar for easy navigation and includes a convenient "book" button that links to the artist's booking system. The clean and visually appealing design ensures a user-friendly experience, allowing visitors to explore the artist's portfolio and seamlessly access essential information.
+<h3 align="left">Link</h3>
+
+https://dayanibeautybar.netlify.app/
+
+## 
+<h3 align="left">Description</h3>
+
+This project is a freelance lash artist website created using HTML, CSS, and JS. It's a responsive website designed to showcase the artist's skills, services, social media presence, and client testimonials. The site features a mobile-friendly sidebar for easy navigation and includes a convenient "book" button that links to the artist's booking system. The clean and visually appealing design ensures a user-friendly experience, allowing visitors to explore the artist's portfolio and seamlessly access essential information.
 
 
 ##
