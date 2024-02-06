@@ -262,7 +262,6 @@ header {
     height: 100vh;
     object-fit: cover; 
     object-position: center center; 
-    /* background-attachment: fixed; */
 }
 
 
@@ -302,27 +301,6 @@ header {
     max-width: 100%; 
     max-height: 100%;
 }
-
-/* .productDetails {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    /* display: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    pointer-events: none;
-    opacity: 0;
-    
-} */
-
-/* .textContainer {
-    margin-left: 25px;
-} */
 
 /* Section 2 - About Us */
 
@@ -406,10 +384,10 @@ header {
     margin-left: 25px;
 }
 
-.socialMediaCallToAction {
+/* .socialMediaCallToAction {
     font-size: 100px;
     margin-left: 350px;
-}
+} */
 
 /* Testimonals */
 .testimonalsContainer {
@@ -556,10 +534,6 @@ Colors
     
     #closeSidebarBtn {
         display: none;
-        /* position: fixed;
-        top: 35px;
-        left: 375px;
-        z-index: 1001; Ensure the button is above the sidebar */
     }
     
     #check:checked ~ ul {
@@ -568,15 +542,6 @@ Colors
 
 
     /* Common Sections */
-
-    /* .commonSection {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-direction: column;
-        flex-wrap: wrap;
-        background: rgb(2, 2, 2);
-    } */
 
     h3 {
         font-size: 50px;
@@ -592,20 +557,11 @@ Colors
 
     /* Header Img */
 
-    /* .logoOverlay {
-        position: absolute;
-        top: 25px; 
-        left: 50px; 
-        z-index: 1; 
-        width: 350px; 
-    } */
-
     .headerImg {
         width: 100vw;
         height: 100vh;
         object-fit: cover; 
         object-position: center center; 
-        /* background-attachment: fixed; */
     }
 
     .headerText {
@@ -656,34 +612,6 @@ Colors
         margin-bottom: 25px;
     }
 
-    /* .productDetails {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(255, 255, 255, 0.9);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 20px;
-        pointer-events: none;
-        opacity: 0;
-        transform: rotateY(180deg); 
-        transform-style: preserve-3d;
-        transition: opacity 0.3s ease, transform 0.3s ease;
-        width: 80%; 
-        height: 80%; 
-        top: 10%; 
-        left: 10%;
-    }
-
-    .imgContainer:hover .productDetails {
-        opacity: 1;
-        transform: rotateY(0deg); 
-    } */
-
     /* Section 2 - About Us */
 
     .aboutContentContainer {
@@ -709,15 +637,7 @@ Colors
         -webkit-box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75); 
         box-shadow: 13px 13px 3px -7px rgba(0,0,0,0.75);
     }
-    
-    /* .aboutTextContainer {
-        order: 2; 
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        font-size: 25px;
-        width: 100%;
-    } */
+
 
     /* Section 3 - Header - Instagram Link */
 
@@ -726,7 +646,6 @@ Colors
         margin-top: 15px;
         margin-bottom: 15px;
         width: 80%;
-
     }
 
     #instagramLink {
@@ -816,10 +735,94 @@ Colors
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 700px) {
 
-}
+    /* Navbar */
+    nav{
+        background: #E5DAD0;
+        height: 100px;
+        width: 100%;
+      }
 
-@media only screen and (min-width: 768px) {
+      .checkbtn {
+        font-size: 60px;
+        color: white;
+        float: right;
+        line-height: 100px;
+        width: 50px;
+        margin-right: 20px;
+        cursor: pointer;
+        display: block; 
+    }
+    
+    #check {
+        display: none;
+    }
+    
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #A9B4A4;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1000; 
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 60px 0;
+        line-height: 30px;
+    }
+    
+    nav ul li a {
+        font-size: 35px;
+    }
+    
+    /* Header Img and Logo */
+    .headerLogo img {
+        width: 25%;
+    }
+
+    .headerText {
+        font-size: 25px;
+    }
+
+    .textContainer {
+        font-size: 40px;
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .headingBox {
+        font-size: 35px;
+    }
+    /* Social Media Section */
+    #instagramLink {
+        font-size: 25px;
+    }
+ 
+    .testimonalsContainer img{
+        width: 315px;
+    }
+
+    /* Call to Action Button */
+    #callToAction {
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0;
+    }
+    
+    #callToAction button {
+        width: 125%;
+        height: auto;
+        font-size: 45px;
+        background-color: white;
+        color: black;
+    }
 
 }
