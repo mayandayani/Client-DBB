@@ -1,21 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
 
-  // Hover effect functionality
-  const imgContainers = document.querySelectorAll(".imgContainer");
+//   // Hover effect functionality
+//   const imgContainers = document.querySelectorAll(".imgContainer");
 
-  imgContainers.forEach((imgContainer) => {
-      const productDetails = imgContainer.querySelector(".productDetails");
+//   imgContainers.forEach((imgContainer) => {
+//       const productDetails = imgContainer.querySelector(".productDetails");
 
-      imgContainer.addEventListener("mouseover", function () {
-          productDetails.style.opacity = "1";
-      });
+//       imgContainer.addEventListener("mouseover", function () {
+//           productDetails.style.opacity = "1";
+//       });
 
-      imgContainer.addEventListener("mouseout", function () {
-          productDetails.style.opacity = "0";
-      });
-  });
+//       imgContainer.addEventListener("mouseout", function () {
+//           productDetails.style.opacity = "0";
+//       });
+//   });
 
-});
+// });
 
   // Function to close the sidebar
   function closeSidebar() {
