@@ -28,7 +28,7 @@ The vision was to create a unique and simple designed website for the business, 
 <h3 align="left">Reflection</h3>
 
 There were quite a few challenges that occured along the development process such as:
-- Underestimating how long the development process would take
+- Underestimated how long the development process would take. Original goal was 1 month, this took 2 months.
 - Lack of appreciation for how complex responsive design can be when using vanilla HTML & CSS
 - Scope creep and constant revision of the end state goal
 - Trying to implement large scale features without understanding how complex they can be
